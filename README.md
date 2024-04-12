@@ -10,4 +10,4 @@ Aktivierung mit .venv\Scripts\Activate für Windows
 
 Starte das Programm mit python main.py
 Name, Nachname, Alter, Geschlecht eingeben
-Dict kommt ausgegeben
+Ein Dictionary wird Ihnen ausgegeben
