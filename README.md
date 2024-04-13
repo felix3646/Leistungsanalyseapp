@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Leistunganalyseapp
 
 # Bitte lies mich!
@@ -22,3 +23,4 @@
     - Geben Sie den Vornamen, Nachnamen, Alter und Geschlecht der Person an, die Sie erstellen wollen. (Achten Sie darauf, dass Sie bei der Angabe des Geschlechts "male" oder "female" eingeben. Wenn etwas anderes eingegeben wird funktioniert die App nicht.)
     - Das Dictionary der Person wird nun im Ordner "person.json" gespeichert
     
+
