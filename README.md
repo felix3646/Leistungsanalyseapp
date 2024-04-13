@@ -1,13 +1,24 @@
-# Leistungsapp
-Erstellung Github Repository -> public
-README.md, gitignore
+# Leistunganalyseapp
 
-Ordner herunterladen mit Git Bash/git clone
-Ordner öffnen in VS Code
-Terminal öffnen
-Virtuelle Umgebung erstellen mit python -m venv .venv
-Aktivierung mit .venv\Scripts\Activate für Windows
+# Bitte lies mich!
 
-Starte das Programm mit python main.py
-Name, Nachname, Alter, Geschlecht eingeben
-Ein Dictionary wird Ihnen ausgegeben
+## Installationsanleitung
+
+- lade dir den Ordner herunter unter öffne den Ordner in VS Code
+- Öffne ein Terminal
+- Erstelle eine neue Python-Umgebung
+    - `python -m venv .venv`
+- Aktiviere die virtuelle Umgebung
+    - Windows: `.venv\Scripts\Activate`
+    - Linux: `source .venv/bin/activate`
+- Installiere die Pakete
+    - Entweder mit `pip install <paketname>`
+    - Oder mit `pip install -r requirements.txt`
+
+## App Benutzung
+
+- Öffne die main.py
+    - Führe das Kernel aus
+    - Geben Sie den Vornamen, Nachnamen, Alter und Geschlecht der Person an, die Sie erstellen wollen. (Achten Sie darauf, dass Sie bei der Angabe des Geschlechts "male" oder "female" eingeben. Wenn etwas anderes eingegeben wird funktioniert die App nicht.)
+    - Das Dictionary der Person wird nun im Ordner "person.json" gespeichert
+    
