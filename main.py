@@ -1,12 +1,19 @@
+from my_classes import Person, Experiment 
 from my_functions import build_person
 import json
 
-first_name = input("Geben Sie den Vornamen an:")
-last_name = input("Geben Sie den Nachnamen an:")
-age = int(input("Geben Sie das Alter an:"))
-sex = input("Geben Sie das Geschlecht an(male or female):")
+first_name = input("Gib deinen Vorname an:")
+last_name = input("Gib deinen Nachnamen an:")
+age = int(input("Gib ein Alter an:"))
+sex = input("Gib dein Geschlecht an (male or female):")
 
-person1 = build_person(first_name, last_name, sex, age) 
+person1 = Person(first_name, last_name, sex, age) 
+person1.save()
 
-with open("person.json", "w") as f: 
-    json.dump(person1, f)
+experiment_name = input("Gib den Experimentennamen an:")
+date = input("Gib das Datum an:")
+supervisor = input("Gib den Versuchsleiter an:")
+subject = input("Gib die Versuchsperson an:")
+
+experiment1 = Experiment(experiment_name, date, supervisor, subject)
+experiment1.save()
