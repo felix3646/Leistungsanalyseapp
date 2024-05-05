@@ -1,5 +1,6 @@
 from my_functions import estimate_max_hr
 import json
+import requests
 
 class Person():
 
@@ -13,6 +14,34 @@ class Person():
     def save(self):
         with open("person.json", "w") as f: 
             json.dump(self.__dict__, f)
+
+
+# Fehler im Code, Verbindung verweigert
+# Ich weiß nicht, wie ich das beheben soll
+    def put(self):
+        ## Create a new person on the server
+        # Define the URL of the API
+        url = "http://127.0.0.1:5000/person/"
+
+        # Define the data you want to send
+
+        data = {
+                "name": self.first_name
+                }
+
+        # Convert the data to JSON format
+        data_json = json.dumps(data)
+
+        # Send a POST request to the API
+        response = requests.post(url, data=data_json)
+
+        # Print the response from the server
+        print(response.text)
+        
+    
+
+
+        
 
 class Subject(Person):
 
@@ -73,5 +102,4 @@ class Experiment():
 
 if __name__ == "__main__":
     person = Subject("felix", "sturm", 34, "male", "21.3.2003")
-    print(person.max_heart_rate)
-    person.save()
+    person.put()
